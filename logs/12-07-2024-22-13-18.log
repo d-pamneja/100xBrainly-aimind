@@ -1,0 +1,5 @@
+[2024-12-07 22:13:18,589] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/Projects/100xBrainly/100xBrainly-aimind/.venv/lib/python3.12/site-packages/pinecone_plugins'])
+[2024-12-07 22:13:18,589] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-07 22:13:18,600] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2024-12-07 22:13:19,552] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/Projects/100xBrainly/100xBrainly-aimind/.venv/lib/python3.12/site-packages/pinecone_plugins'])
+[2024-12-07 22:13:19,552] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference

@@ -9,7 +9,7 @@ from .data_model import *
 # Initialising the API from FastAPI and APIRouter
 app = FastAPI(prefix="/aimind")
 origins = [
-    "http://localhost:3001",
+    "https://100x-brainly-backend.vercel.app",
 ]
 
 app.add_middleware(

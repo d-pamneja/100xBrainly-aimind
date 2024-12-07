@@ -1,6 +1,7 @@
 Metadata-Version: 2.1
-Name: 100xBrainly
+Name: 100xBrainlyAI-Mind
 Version: 2.1.1
+Home-page: https://github.com/d-pamneja/100xBrainly-aimind
 Author: Dhruv Pamneja
 Author-email: dpamneja@gmail.com
 Requires-Dist: aiohappyeyeballs==2.4.4

@@ -7,9 +7,10 @@ from .data_model import *
 
 
 # Initialising the API from FastAPI and APIRouter
-app = FastAPI(prefix="/aimind")
+app = FastAPI()
 origins = [
     "https://100x-brainly-backend.vercel.app",
+    "https://100x-brainly.vercel.app"
 ]
 
 app.add_middleware(

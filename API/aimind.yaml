@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: AIMind API
+  version: 1.0.0
+  description: AI-powered document query and storage service
+
+servers:
+  - url: /aimind
+
+paths:
+  /:
+    get:
+      summary: Home endpoint
+      responses:
+        '200':
+          description: Welcome message
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Hello from 100xBrainly AI Mind!"
+
+  /aimind/storeDoc:
+    post:
+      summary: Store a document in vector database
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                initial_query:
+                  type: object
+                  properties:
+                    file_url:
+                      type: string
+                      description: URL of the document to be stored
+                    file_type:
+                      type: string
+                      description: Type of the file (e.g., PDF, TXT)
+                doc_info:
+                  type: object
+                  properties:
+                    key:
+                      type: string
+                      description: Unique key for the document
+                    userID:
+                      type: string
+                      description: ID of the user storing the document
+                    type:
+                      type: string
+                      description: Type of document
+      responses:
+        '200':
+          description: Document successfully stored
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: object
+                    properties:
+                      upserted_count:
+                        type: integer
+                        description: Number of document chunks uploaded
+        '400':
+          description: Invalid link or request
+        '500':
+          description: Internal server error
+
+  /aimind/chat:
+    post:
+      summary: Query documents and get AI-generated response
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_query:
+                  type: string
+                  description: User's query to be answered from stored documents
+                userID:
+                  type: string
+                  description: ID of the user making the query
+                key:
+                  type: string
+                  description: Document key to search within
+      responses:
+        '200':
+          description: Successful query response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    description: AI-generated response to the query
+        '400':
+          description: Invalid query
+        '500':
+          description: Internal server error
+
+components:
+  schemas:
+    StoreDoc:
+      type: object
+      properties:
+        initial_query:
+          type: object
+          properties:
+            file_url:
+              type: string
+            file_type:
+              type: string
+        doc_info:
+          type: object
+          properties:
+            key:
+              type: string
+            userID:
+              type: string
+            type:
+              type: string
+
+    GetRAGResponse:
+      type: object
+      properties:
+        user_query:
+          type: string
+        userID:
+          type: string
+        key:
+          type: string

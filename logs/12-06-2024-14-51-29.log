@@ -1,0 +1,8 @@
+[2024-12-06 14:51:29,421] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 14:51:29,422] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 14:51:29,432] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2024-12-06 14:51:30,334] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 14:51:30,335] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 14:51:42,069] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 14:51:43,783] 193 root - INFO - Results fetched from the vectorDB from the index : <pinecone.data.index.Index object at 0x11727fb10>
+[2024-12-06 14:51:43,784] 203 root - INFO - Relevant documents in desired format fetched for the query : to which address is the invoice billed to? Give me the details of that person

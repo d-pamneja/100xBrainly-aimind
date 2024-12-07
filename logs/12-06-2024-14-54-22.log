@@ -1,0 +1,74 @@
+[2024-12-06 14:54:22,594] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 14:54:22,594] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 14:54:22,604] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2024-12-06 14:54:23,412] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 14:54:23,413] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 14:54:27,990] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 14:54:29,759] 193 root - INFO - Results fetched from the vectorDB from the index : documents
+[2024-12-06 14:54:29,759] 194 root - INFO - Results fetched : {'matches': [], 'namespace': '', 'usage': {'read_units': 5}}
+[2024-12-06 14:54:29,759] 204 root - INFO - Relevant documents in desired format fetched for the query : to which address is the invoice billed to? Give me the details of that person
+[2024-12-06 14:54:29,759] 205 root - INFO - Relevant Texts : []
+[2024-12-06 14:55:30,728] 25 root - INFO - Initial document chunk set.
+[2024-12-06 14:55:30,728] 29 root - INFO - Chunked documents set.
+[2024-12-06 14:55:31,306] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 14:55:31,761] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 14:55:31,785] 33 root - INFO - Records list created.
+[2024-12-06 14:55:31,788] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 14:55:31,791] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 14:55:34,369] 157 root - INFO - Total records upserted successfully: 2
+[2024-12-06 14:55:34,373] 38 root - INFO - Records uploaded.
+[2024-12-06 14:55:42,252] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 14:55:43,746] 193 root - INFO - Results fetched from the vectorDB from the index : documents
+[2024-12-06 14:55:43,748] 194 root - INFO - Results fetched : {'matches': [{'id': '674313bc5cbbf2d8da2a4649/pdf/OpenAI_PAGE_0_CHUNK_0',
+              'metadata': {'chunk': '024C219D\x000003 · $5.90 USD due March '
+                                    '27, 2024 Page 1 of 1\n'
+                                    'Invoice\n'
+                                    'Invoice number 024C219D\x000003\n'
+                                    'Date of issue March 27, 2024\n'
+                                    'Date due March 27, 2024\n'
+                                    'OpenAI, LLC\n'
+                                    '548 Market Street\n'
+                                    'PMB 97273\n'
+                                    'San Francisco, California 94104\x005401\n'
+                                    'United States\n'
+                                    'ar@openai.com\n'
+                                    'IN GST 9921USA29044OSI\n'
+                                    'Bill to\n'
+                                    'Dhruv Pamneja\n'
+                                    '36/75 Swastika Apartments Punjabi\n'
+                                    'Bagh West\n'
+                                    'New Delhi 110026\n'
+                                    'Delhi\n'
+                                    'India\n'
+                                    'dpamneja@gmail.com\n'
+                                    '$5.90 USD due March 27, 2024\n'
+                                    'Pay online\n'
+                                    'Description Qty Unit price Tax Amount',
+                           'chunk_number': 0.0,
+                           'key': '674313bc5cbbf2d8da2a4649/pdf/OpenAI',
+                           'page_number': 0.0,
+                           'type': 'pdf',
+                           'userID': '674313bc5cbbf2d8da2a4649'},
+              'score': 0.453770965,
+              'values': []},
+             {'id': '674313bc5cbbf2d8da2a4649/pdf/OpenAI_PAGE_0_CHUNK_1',
+              'metadata': {'chunk': 'OpenAI API usage credit 1 $5.00 18% '
+                                    '$5.00\n'
+                                    '\xa0\n'
+                                    'Subtotal $5.00\n'
+                                    'Total excluding tax $5.00\n'
+                                    'IGST - India \x0018% on $5.00\x00 $0.90\n'
+                                    '\x00₹75.02\x00\n'
+                                    'Total $5.90\n'
+                                    'Amount due $5.90\xa0USD',
+                           'chunk_number': 1.0,
+                           'key': '674313bc5cbbf2d8da2a4649/pdf/OpenAI',
+                           'page_number': 0.0,
+                           'type': 'pdf',
+                           'userID': '674313bc5cbbf2d8da2a4649'},
+              'score': 0.315846741,
+              'values': []}],
+ 'namespace': '',
+ 'usage': {'read_units': 6}}
+[2024-12-06 14:55:43,748] 204 root - INFO - Relevant documents in desired format fetched for the query : to which address is the invoice billed to? Give me the details of that person
+[2024-12-06 14:55:43,748] 205 root - INFO - Relevant Texts : [{'score': 0.453770965, 'text': '024C219D\x000003 · $5.90 USD due March 27, 2024 Page 1 of 1\nInvoice\nInvoice number 024C219D\x000003\nDate of issue March 27, 2024\nDate due March 27, 2024\nOpenAI, LLC\n548 Market Street\nPMB 97273\nSan Francisco, California 94104\x005401\nUnited States\nar@openai.com\nIN GST 9921USA29044OSI\nBill to\nDhruv Pamneja\n36/75 Swastika Apartments Punjabi\nBagh West\nNew Delhi 110026\nDelhi\nIndia\ndpamneja@gmail.com\n$5.90 USD due March 27, 2024\nPay online\nDescription Qty Unit price Tax Amount', 'reference': 1}, {'score': 0.315846741, 'text': 'OpenAI API usage credit 1 $5.00 18% $5.00\n\xa0\nSubtotal $5.00\nTotal excluding tax $5.00\nIGST - India \x0018% on $5.00\x00 $0.90\n\x00₹75.02\x00\nTotal $5.90\nAmount due $5.90\xa0USD', 'reference': 1}]

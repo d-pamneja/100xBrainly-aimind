@@ -1,0 +1,17 @@
+setup.py
+100xBrainly.egg-info/PKG-INFO
+100xBrainly.egg-info/SOURCES.txt
+100xBrainly.egg-info/dependency_links.txt
+100xBrainly.egg-info/requires.txt
+100xBrainly.egg-info/top_level.txt
+API/__init__.py
+API/data_model.py
+API/dependencies.py
+API/resource.py
+src/__init__.py
+src/dependencies.py
+src/exception.py
+src/logger.py
+src/query_doc/__init__.py
+src/query_doc/prompts.py
+src/query_doc/utils.py

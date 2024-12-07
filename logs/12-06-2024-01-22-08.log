@@ -1,0 +1,11 @@
+[2024-12-06 01:22:08,089] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 01:22:08,089] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 01:22:08,100] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2024-12-06 01:22:14,582] 27 root - INFO - Initial document chunk set.
+[2024-12-06 01:22:14,582] 35 root - INFO - Chunked documents set.
+[2024-12-06 01:22:16,552] 1027 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+[2024-12-06 01:22:16,555] 42 root - INFO - Records list created.
+[2024-12-06 01:22:17,654] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 01:22:17,655] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 01:22:19,161] 159 root - INFO - Total records upserted successfully: 1
+[2024-12-06 01:22:19,165] 50 root - INFO - Records uploaded.

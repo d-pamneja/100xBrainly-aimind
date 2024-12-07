@@ -1,0 +1,23 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import last
+
+spark = SparkSession.builder.appName("SCD Type II Merge W5 GA").getOrCreate()
+
+master_file_path = "gs://week-5-ga/source_data-w5.csv"
+update_file_path = "gs://week-5-ga/update_data-w5.csv"
+output_file_path = "gs://week-5-ga/master_data-w5.csv"
+
+master_df = spark.read.csv(master_file_path, header=True, inferSchema=True)
+update_df = spark.read.csv(update_file_path, header=True, inferSchema=True)
+
+combined_df = master_df.union(update_df)
+
+final_df = combined_df.groupBy("Customer ID").agg(
+    last("Name").alias("Name"),
+    last("Address").alias("Address"),
+    last("Membership Start Date").alias("Membership Start Date"),
+    last("Membership End Date").alias("Membership End Date")
+)
+
+final_df.show()
+final_df.write.csv(output_file_path, header=True)

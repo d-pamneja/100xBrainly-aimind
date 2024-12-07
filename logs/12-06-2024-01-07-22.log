@@ -1,0 +1,8 @@
+[2024-12-06 01:07:22,205] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 01:07:22,205] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2024-12-06 01:07:22,216] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2024-12-06 01:07:27,191] 28 root - INFO - Initial document chunk set.
+[2024-12-06 01:07:27,191] 37 root - INFO - Chunked documents set.
+[2024-12-06 01:07:27,192] 45 root - INFO - Records list created.
+[2024-12-06 01:07:28,125] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/Users/dhruv/Desktop/Development/FullStack/SecondBrain_Project/AImind/.venv/lib/python3.11/site-packages/pinecone_plugins'])
+[2024-12-06 01:07:28,126] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
